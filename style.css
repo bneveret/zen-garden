@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
+@font-face {
+    font-family: 'PineForest';
+    src: local('PineForest'), url('PineForest.otf') format('opentype');
+}
+@font-face {
+    font-family: 'QuickCamping';
+    src: local('QuickCamping'), url('QuickCamping.otf') format('opentype');
+}
+p, a, button, li {
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-weight: 600;
+}
+h1 {
+    font-family: 'PineForest', serif;
+}
+h2, h3 {
+    font-family: 'QuickCamping', serif;
+}
