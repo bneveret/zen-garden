@@ -16,13 +16,16 @@ p, a, button, li {
     font-family: 'Bilbo Swash Caps', cursive;
     font-weight: 600;
 }
+p {
+    color: var(--fontColor);
+}
 h1 {
     font-family: 'PineForest', serif;
     color: var(--headingColor);
 }
 h2, h3 {
     font-family: 'QuickCamping', serif;
-    color: var(--fontColor);
+    color: var(--headingColor);
 }
 
 
