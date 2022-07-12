@@ -29,23 +29,25 @@ h2, h3 {
 
 
 /* basic elements */
-	
-body {	
-	line-height:16px;
-	font-size:14px;
-	margin: 0; 
+
+body {
+	line-height: 16px;
+	font-size: 14px;
+	margin: 0;
 	padding: 0;
 }
 
-body a:link, a:active, a:visited{
-	text-decoration:none;
+body a:link,
+a:active,
+a:visited {
+	text-decoration: none;
 }
 
-body a:hover{
-	text-decoration:underline;
+body a:hover {
+	text-decoration: underline;
 }
 
-p{
+p {
 	margin: 10px;
 	padding: 0;
 }
@@ -67,116 +69,151 @@ abbr {
 
 /* content div's */
 
-.page-wrapper { 
+.page-wrapper {
 	margin: auto;
-	width:892px;
-	position:relative;
+	width: 892px;
+	position: relative;
 }
 
-.intro{
-	width:892px;
-	height:451px;
+.wrapper {
+	position: absolute;
+	/* top: 10%; */
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: switch 25s infinite ease-in-out;
+	min-width: 100%;
+	margin: auto;
+}
+
+/* .wrapper:nth-child(1) {
+	animation-delay: -7s;
+}
+
+.wrapper:nth-child(2) {
+	animation-delay: -6s;
+}
+
+.wrapper:nth-child(3) {
+	animation-delay: -5s;
+} */
+
+.intro {
+	width: 892px;
+	height: 451px;
 }
 
 header {
-	height:34px;
-	overflow:hidden;
-	position:absolute;
-	top:462px;
-	left:205px;
-	width:587px;
+	height: 34px;
+	overflow: hidden;
+	position: absolute;
+	top: 462px;
+	left: 205px;
+	width: 587px;
 }
 
-h1, h2 {
+h1,
+h2 {
 	text-indent: 100%;
 	white-space: nowrap;
-	overflow: hidden;	
+	overflow: hidden;
 }
 
 .summary {
-	transform: scale(1.5, 0.25);
+	font-family: 'Courier New', Courier, monospace;
 }
 
-.preamble{
-	padding:240px 100px 0 205px;
+.preamble {
+	padding: 240px 100px 0 205px;
 }
 
-.preamble p:nth-child(2){
+.preamble p:nth-child(2) {
 	margin-top: 20px;
 }
 
-.supporting{
-	height:100%;
+.supporting {
+	height: 100%;
 }
 
 .explanation {
-	padding:50px 100px 30px 205px;
-	height:100%;
+	padding: 50px 100px 30px 205px;
+	height: 100%;
 }
 
 .participation {
-	margin:20px 100px 30px 205px;
-	padding-top:40px;
-	height:100%;
+	margin: 20px 100px 30px 205px;
+	padding-top: 40px;
+	height: 100%;
 }
 
 .benefits {
-	margin:65px 100px 30px 205px;
-	padding-top:40px;
-	height:100%;
+	margin: 65px 100px 30px 205px;
+	padding-top: 40px;
+	height: 100%;
 }
 
-.requirements{
-	margin:65px 100px 30px 205px;
-	padding:40px 0 15px 0;
-	height:100%;
+.requirements {
+	margin: 65px 100px 30px 205px;
+	padding: 40px 0 15px 0;
+	height: 100%;
 }
 
-footer{
-	padding:10px;
-	text-align:center;
+footer {
+	padding: 10px;
+	text-align: center;
 }
 
 /* link list and extra div's */
 
 .sidebar {
-	position:absolute;
-	width:150px;
-	top:603px;
-	z-index:5;
-	color: #666666;
-	font-size:10px;
-	left: 25px;
-	height:550px;
-	line-height:13px;
+	position: relative;
+	font-family: monospace;
+	color: rgb(yellow, orange, red);
+	font-size: 1em;
+	filter: contrast(15);
 }
 
-.sidebar a:link, a:active, a:visited {
-	text-decoration:none;
+.sidebar a:link,
+a:active,
+a:visited {
+	text-decoration: none;
 }
 
-.sidebar a:hover{
+.sidebar a:hover {
 	text-decoration: underline;
 }
 
-.design-selection{
+.design-selection {
 	margin: 5px 0 0 0;
 	padding: 20px 0 0 0;
-	width:150px;
+	width: 150px;
 }
 
-.design-archives{
+.design-archives {
 	margin: 10px 0 0 0;
 	padding: 30px 0 0 0;
-	width:150px;
+	width: 150px;
 }
 
-.zen-resources{
+.zen-resources {
 	margin: 15px 0 0 0;
 	padding: 30px 0 0 0;
-	width:150px;
+	width: 150px;
 }
 
+@keyframes switch {
+	0%,
+	5%,
+	100% {
+		filter: blur(0px);
+		opacity: 1;
+	}
+
+	50%,
+	80% {
+		filter: blur(180px);
+		opacity: 0;
+	}
+}
 
 
 /*
