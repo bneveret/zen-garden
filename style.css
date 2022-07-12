@@ -7,15 +7,25 @@
     font-family: 'QuickCamping';
     src: local('QuickCamping'), url('QuickCamping.otf') format('opentype');
 }
+:root {
+    --headingColor: #3dd104;
+    --fontColor: #614109;
+}
+
 p, a, button, li {
     font-family: 'Bilbo Swash Caps', cursive;
     font-weight: 600;
 }
+p {
+    color: var(--fontColor);
+}
 h1 {
     font-family: 'PineForest', serif;
+    color: var(--headingColor);
 }
 h2, h3 {
     font-family: 'QuickCamping', serif;
+    color: var(--headingColor);
 }
 
 
