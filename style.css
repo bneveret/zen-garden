@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
 @font-face {
     font-family: 'PineForest';
     src: local('PineForest'), url('PineForest.otf') format('opentype');
@@ -16,8 +16,7 @@
 }
 
 p, a, button, li {
-    font-family: 'Bilbo Swash Caps', cursive;
-    font-weight: 600;
+    font-family: 'Cabin', sans-serif;
 }
 h1 {
     font-family: 'PineForest', serif;
