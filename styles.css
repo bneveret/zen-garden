@@ -15,7 +15,7 @@
     --fontColor_two: #a66c14;
     --first_gradient: #234ca8;
     --second_gradient: #cfe1fc;
-	--linkColor_main: #54f04f;
+	--text_shadow: #078ba8;
 	--linkColor_hover: #2fdded;
 }
 
@@ -36,7 +36,7 @@ h2, h3 {
 }
 
 a {
-	color: var(--linkColor_main);
+	text-shadow: 5px 3px 3px var(--text_shadow);
 }
 
 a:hover {
