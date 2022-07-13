@@ -136,20 +136,22 @@ body a:hover {
     /* content div's */
     
     .page-wrapper {
+        display: grid;
+        grid-template-columns: 20% 80%;
         margin: auto;
         width: 892px;
         position: relative;
     }
     
-    .wrapper {
+    /*.wrapper {
         position: absolute;
-        /* top: 10%; */
+        /* top: 10%; *\
         left: 50%;
         transform: translate(-50%, -50%);
         animation: switch 25s infinite ease-in-out;
         min-width: 100%;
         margin: auto;
-    }
+    }*/
     
     /* .wrapper:nth-child(1) {
         animation-delay: -7s;
@@ -165,7 +167,7 @@ body a:hover {
     
     .intro {
         width: 892px;
-        height: 451px;
+        /*height: 451px;*/
     }
     
     header {
@@ -189,28 +191,28 @@ body a:hover {
     }
     
     .preamble {
-        padding: 240px 100px 0 205px;
+        padding: 50px 100px 0 20px;
         color: var(--fontColor_one);
     }
     
     .preamble p:nth-child(2) {
-        margin-top: 20px;
+        margin-top: 0px;
     }
     
-    .supporting {
+    /*.supporting {
         height: 100%;
-    }
+    }*/
     
     .explanation {
-        padding: 50px 100px 30px 205px;
-        height: 100%;
+        padding: 50px 100px 30px 20px;
+        /*height: 100%;*/
         color: var(--fontColor_one);
     }
     
     .participation {
-        margin: 20px 100px 30px 205px;
+        margin: 20px 100px 30px 20px;
         padding-top: 40px;
-        height: 100%;
+        /*height: 100%;*/
         color: var(--fontColor_two);
     }
     .participation h3 {
@@ -218,9 +220,9 @@ body a:hover {
     }
     
     .benefits {
-        margin: 65px 100px 30px 205px;
+        margin: 65px 100px 30px 20px;
         padding-top: 40px;
-        height: 100%;
+        /*height: 100%;*/
         color: var(--fontColor_two);
     }
     .benefits h3 {
@@ -228,9 +230,9 @@ body a:hover {
     }
     
     .requirements {
-        margin: 65px 100px 30px 205px;
+        margin: 65px 100px 30px 20px;
         padding: 40px 0 15px 0;
-        height: 100%;
+        /*height: 100%;*/
         color: var(--fontColor_two);
     }
     .requirements h3 {
@@ -245,11 +247,14 @@ body a:hover {
     /* link list and extra div's */
     
     .sidebar {
+        grid-column: 1/2;
+        grid-row: 1/3;
         position: relative;
         font-family: monospace;
         color: rgb(yellow, orange, red);
         font-size: 1em;
         filter: contrast(15);
+        margin-top: 80px;
     }
     
     .sidebar a:link,
