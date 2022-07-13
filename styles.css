@@ -172,21 +172,21 @@ body a:hover {
         /*height: 451px;*/
     }
     
-    header {
+    /*header {
         height: 34px;
         overflow: hidden;
         position: absolute;
         top: 462px;
         left: 205px;
         width: 587px;
-    }
+    }*/
     
-    h1,
+    /*h1,
     h2 {
         text-indent: 100%;
         white-space: nowrap;
         overflow: hidden;
-    }
+    }*/
     
     .summary {
         font-family: 'Courier New', Courier, monospace;
