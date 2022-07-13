@@ -16,6 +16,7 @@
     --first_gradient: #234ca8;
     --second_gradient: #cfe1fc;
 	--text_shadow: #078ba8;
+    --linkColor: #91dbeb;
 	--linkColor_hover: #2fdded;
 }
 
@@ -36,6 +37,7 @@ h2, h3 {
 }
 
 a {
+    color: var(--linkColor);
 	text-shadow: 5px 3px 3px var(--text_shadow);
 }
 
