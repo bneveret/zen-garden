@@ -15,10 +15,16 @@
     --fontColor_two: #a66c14;
     --first_gradient: #234ca8;
     --second_gradient: #cfe1fc;
+	--linkColor_main: #54f04f;
+	--linkColor_hover: #2fdded;
 }
 
 p, a, button, li {
     font-family: 'Cabin', sans-serif;
+}
+
+.summary p:nth-of-type(1), .summary p:nth-of-type(2) {
+    color: var(--fontColor_one);
 }
 h1 {
     font-family: 'PineForest', serif;
@@ -27,6 +33,14 @@ h1 {
 h2, h3 {
     font-family: 'QuickCamping', serif;
     color: var(--headingColor_one);
+}
+
+a {
+	color: var(--linkColor_main);
+}
+
+a:hover {
+	color: var(--linkColor_hover);
 }
 
 /* Small */
@@ -44,10 +58,6 @@ a:visited {
 
 body a:hover {
 	text-decoration: underline;
-}
-
-p:nth-of-type(1), p:nth-of-type(2) {
-    color: var(--fontColor_one);
 }
 
 .preamble {
@@ -106,9 +116,6 @@ p:nth-of-type(1), p:nth-of-type(2) {
     p {
         margin: 10px;
         padding: 0;
-    }
-    p:nth-of-type(1), p:nth-of-type(2) {
-        color: var(--fontColor_one);
     }
     
     ul {
