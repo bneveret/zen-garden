@@ -15,6 +15,8 @@
     --fontColor_two: #a66c14;
     --first_gradient: #234ca8;
     --second_gradient: #cfe1fc;
+	--linkColor_main: #54f04f;
+	--linkColor_hover: #2fdded;
 }
 
 p, a, button, li {
@@ -57,7 +59,7 @@ p {
 	margin: 10px;
 	padding: 0;
 }
-p:nth-of-type(1), p:nth-of-type(2) {
+.summary p:nth-of-type(1), .summary p:nth-of-type(2) {
     color: var(--fontColor_one);
 }
 
@@ -70,6 +72,14 @@ ul {
 li {
 	padding-left: 7px;
 	margin-bottom: 5px;
+}
+
+a {
+	color: var(--linkColor_main);
+}
+
+a:hover {
+	color: var(--linkColor_hover);
 }
 
 abbr {
@@ -89,7 +99,7 @@ abbr {
 	/* top: 10%; */
 	left: 50%;
 	transform: translate(-50%, -50%);
-	animation: switch 25s infinite ease-in-out;
+	/* animation: switch 25s infinite ease-in-out; */
 	min-width: 100%;
 	margin: auto;
 }
