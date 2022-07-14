@@ -25,7 +25,7 @@ p, a, button, li {
 }
 
 .summary {
-    & p:nth-of-type(1), &p:nth-of-type(2) {
+    & p:nth-of-type(1), & p:nth-of-type(2) {
         color: $fontColor_one;
     }
 }
@@ -130,7 +130,7 @@ a:visited {
 
     .wrapper {
         position: absolute;
-        /* top: 10%; */
+        top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
         animation: switch 25s infinite ease-in-out;
