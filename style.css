@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
 @font-face {
     font-family: 'PineForest';
     src: local('PineForest'), url('PineForest.otf') format('opentype');
@@ -8,24 +8,27 @@
     src: local('QuickCamping'), url('QuickCamping.otf') format('opentype');
 }
 :root {
-    --headingColor: #3dd104;
-    --fontColor: #614109;
+    --headingColor_one: #3dd104;
+    --headingColor_two: #2c9404;
+    --headingColor_three: #42d408;
+    --fontColor_one: #f0a737;
+    --fontColor_two: #a66c14;
+    --first_gradient: #234ca8;
+    --second_gradient: #cfe1fc;
+	--linkColor_main: #54f04f;
+	--linkColor_hover: #2fdded;
 }
 
 p, a, button, li {
-    font-family: 'Bilbo Swash Caps', cursive;
-    font-weight: 600;
-}
-p {
-    color: var(--fontColor);
+    font-family: 'Cabin', sans-serif;
 }
 h1 {
     font-family: 'PineForest', serif;
-    color: var(--headingColor);
+    color: var(--headingColor_one);
 }
 h2, h3 {
     font-family: 'QuickCamping', serif;
-    color: var(--headingColor);
+    color: var(--headingColor_one);
 }
 
 
@@ -38,6 +41,8 @@ body {
 	font-size: 14px;
 	margin: 0;
 	padding: 0;
+    background-color: white;
+    background-image: linear-gradient(180deg, var(--first_gradient), var(--second_gradient));
 }
 
 body a:link,
@@ -54,6 +59,9 @@ p {
 	margin: 10px;
 	padding: 0;
 }
+.summary p:nth-of-type(1), .summary p:nth-of-type(2) {
+    color: var(--fontColor_one);
+}
 
 ul {
 	list-style-type: none;
@@ -64,6 +72,14 @@ ul {
 li {
 	padding-left: 7px;
 	margin-bottom: 5px;
+}
+
+a {
+	color: var(--linkColor_main);
+}
+
+a:hover {
+	color: var(--linkColor_hover);
 }
 
 abbr {
@@ -83,7 +99,7 @@ abbr {
 	/* top: 10%; */
 	left: 50%;
 	transform: translate(-50%, -50%);
-	animation: switch 25s infinite ease-in-out;
+	/* animation: switch 25s infinite ease-in-out; */
 	min-width: 100%;
 	margin: auto;
 }
@@ -127,6 +143,7 @@ h2 {
 
 .preamble {
 	padding: 240px 100px 0 205px;
+    color: var(--fontColor_one);
 }
 
 .preamble p:nth-child(2) {
@@ -140,24 +157,37 @@ h2 {
 .explanation {
 	padding: 50px 100px 30px 205px;
 	height: 100%;
+    color: var(--fontColor_one);
 }
 
 .participation {
 	margin: 20px 100px 30px 205px;
 	padding-top: 40px;
 	height: 100%;
+    color: var(--fontColor_two);
+}
+.participation h3 {
+    color: var(--headingColor_three);
 }
 
 .benefits {
 	margin: 65px 100px 30px 205px;
 	padding-top: 40px;
 	height: 100%;
+    color: var(--fontColor_two);
+}
+.benefits h3 {
+    color: var(--headingColor_two);
 }
 
 .requirements {
 	margin: 65px 100px 30px 205px;
 	padding: 40px 0 15px 0;
 	height: 100%;
+    color: var(--fontColor_two);
+}
+.requirements h3 {
+    color: var(--headingColor_two);
 }
 
 footer {

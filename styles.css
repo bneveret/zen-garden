@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap");
+@font-face {
+  font-family: "PineForest";
+  src: local("PineForest"), url("PineForest.otf") format("opentype");
+}
+@font-face {
+  font-family: "QuickCamping";
+  src: local("QuickCamping"), url("QuickCamping.otf") format("opentype");
+}
+/* General Stlyes */
+p, a, button, li {
+  font-family: "Cabin", sans-serif;
+}
+
+.summary p:nth-of-type(1), .summary p:nth-of-type(2) {
+  color: #f0a737;
+}
+
+h1 {
+  font-family: "PineForest", serif;
+  color: #3dd104;
+}
+
+h2, h3 {
+  font-family: "QuickCamping", serif;
+  color: #3dd104;
+}
+
+a {
+  color: #91dbeb;
+  text-shadow: 1px 1px 3px black;
+}
+a:hover {
+  color: #2fdded;
+}
+
+body {
+  background-color: white;
+  background-image: linear-gradient(180deg, #234ca8, #cfe1fc);
+}
+body a:hover {
+  text-decoration: underline;
+}
+
+body a:link,
+.sidebar a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+.preamble {
+  color: #f0a737;
+}
+
+.explanation {
+  color: #f0a737;
+}
+
+.participation {
+  color: #a66c14;
+}
+.participation h3 {
+  color: #42d408;
+}
+
+.benefits {
+  color: #a66c14;
+}
+.benefits h3 {
+  color: #42d408;
+}
+
+.requirements {
+  color: #a66c14;
+}
+.requirements h3 {
+  color: #42d408;
+}
+
+/* Medium and Large Screen Specifics */
+@media only screen and (min-width: 52em) {
+  body {
+    line-height: 16px;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    margin: 10px;
+    padding: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  li {
+    padding-left: 7px;
+    margin-bottom: 5px;
+  }
+
+  abbr {
+    border-bottom: none;
+  }
+
+  /* Content Divs */
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin: auto;
+    width: 892px;
+    position: relative;
+  }
+
+  .wrapper {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    margin: auto;
+  }
+
+  .intro {
+    width: 892px;
+  }
+
+  .summary {
+    padding: 0px 250px 30px 20px;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .preamble {
+    padding: 50px 250px 30px 20px;
+  }
+  .preamble p:nth-child(2) {
+    margin-top: 0px;
+  }
+
+  .explanation {
+    padding: 50px 100px 30px 20px;
+  }
+
+  .participation {
+    margin: 20px 100px 30px 20px;
+    padding-top: 40px;
+  }
+
+  .benefits {
+    margin: 65px 100px 30px 20px;
+    padding-top: 40px;
+  }
+
+  .requirements {
+    margin: 65px 100px 30px 20px;
+    padding: 40px 0 15px 0;
+  }
+
+  footer {
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Link List and Extra Divs */
+  .sidebar {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    position: relative;
+    font-family: monospace;
+    font-size: 1em;
+    filter: contrast(15);
+    margin-top: 80px;
+  }
+
+  .sidebar a:hover {
+    text-decoration: underline;
+  }
+
+  .design-selection {
+    margin: 5px 0 0 0;
+    padding: 20px 0 0 0;
+    width: 150px;
+  }
+
+  .design-archives {
+    margin: 10px 0 0 0;
+    padding: 30px 0 0 0;
+    width: 150px;
+  }
+
+  .zen-resources {
+    margin: 15px 0 0 0;
+    padding: 30px 0 0 0;
+    width: 150px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
